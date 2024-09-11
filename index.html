@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Secret</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #e6dee9);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+            color: #fff;
+        }
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 0%; }
+            50% { background-position: 100% 100%; }
+            100% { background-position: 0% 0%; }
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        input, button {
+            font-size: 16px;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+        input {
+            width: 250px;
+        }
+        button {
+            background-color: #ff7e79;
+            color: #fff;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff6f61;
+        }
+        #clue {
+            margin-top: 20px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Guess the Secret</h1>
+        <p>Guess the secret message:</p>
+        <input type="text" id="guessInput" placeholder="Enter your guess">
+        <button onclick="checkGuess()">Submit</button>
+        <button onclick="showClue()">Get a Clue</button>
+        <p id="clue" class="hidden"></p>
+        <p id="message"></p>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

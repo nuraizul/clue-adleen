@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #e6dee9);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+            color: #fff;
+        }
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 0%; }
+            50% { background-position: 100% 100%; }
+            100% { background-position: 0% 0%; }
+        }
+        .message {
+            font-size: 24px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="message" id="resultMessage"></div>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const message = urlParams.get('message') || "Thank you for playing!";
+        document.getElementById('resultMessage').textContent = message;
+    </script>
+</body>
+</html>
