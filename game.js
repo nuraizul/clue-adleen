@@ -1,8 +1,8 @@
-const SECRET_MESSAGE = "adleen";
+const SECRET_MESSAGE = "LUQMAN";
 const CLUES = [
-    "This is a matter of the creator's feelings",
-    "The answer given is a matter of whether it is accepted or rejected.",
-    "You need to look at anything that is on this page to get a clue : @**e*^"
+    "TERUK LA KAU NI",
+    "TEKA ELOK SIKIT",
+    "NI CLUE TENGOK AH, PAKAI HURUF BESAR AU 'L3333N'"
 ];
 
 let clueIndex = 0;
