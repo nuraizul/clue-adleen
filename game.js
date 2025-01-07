@@ -1,8 +1,8 @@
-const SECRET_MESSAGE = "LUQMAN";
+const SECRET_MESSAGE = "hasmirah";
 const CLUES = [
-    "TERUK LA KAU NI",
-    "TEKA ELOK SIKIT",
-    "NI CLUE TENGOK AH, PAKAI HURUF BESAR AU 'L3333N'"
+    "cuba la",
+    "ala senang je",
+    "You need to look at anything that is on this page to get a clue : #******#"
 ];
 
 let clueIndex = 0;
@@ -18,7 +18,7 @@ function checkGuess() {
     }
 
     if (guess.toLowerCase() === SECRET_MESSAGE.toLowerCase()) {
-        window.location.href = `result.html?message=can we create a relationship ? : I’ve come to a serious realization: I’ve caught the ‘crush’ bug for you! 😅 Just had to let you know before it turns into an obsession. If you’re up for hanging out and maybe a bit of fun, let me know!`;
+        window.location.href = `result.html?message=saya sayang awak la hasmirah, please jaga orang tau... orang ni tak betul sangat. saya harap kita kekal sampai jannah okey... iloveyou❤`;
     } else {
         messageElement.textContent = `Your guess: "${guess}". Try again!`;
         showClue();
